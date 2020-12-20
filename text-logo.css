@@ -1,0 +1,28 @@
+.text-logo {
+  color: #1f2041;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  width: 48.61px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .text-logo {
+    width: 100%;
+    font-size: 21px;
+  }
+}
