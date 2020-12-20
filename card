@@ -1,0 +1,30 @@
+.cm-card {
+  width: 100%;
+  height: 257px;
+  border: none;
+  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.cm-card:first-child, .cm-card:nth-child(2) {
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .central, .cm-card, .cm-card:first-child, .cm-card:nth-child(2) {
+    margin: 0 auto;
+  }
+  .cm-card {
+    min-width: 270px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1149px) {
+  .cm-card {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
