@@ -1,0 +1,10 @@
+/*Компонент левый подзаголовок в sidebar*/
+.subhead {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
