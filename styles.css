@@ -1,0 +1,76 @@
+.remove-outline, .slick-slide:focus, .slick-dots:focus, .slick-dots > li:focus, .slick-dots > li > button:focus {
+  outline: none;
+}
+
+.slick-slider {
+  width: 100%;
+  height: 155px;
+  position: relative;
+}
+
+.slick-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 155px;
+}
+
+.slick-track {
+  width: 100% !important;
+  height: 155px !important;
+  position: relative;
+}
+
+.slick-slide {
+  width: 100% !important;
+  height: 155px !important;
+  position: absolute !important;
+  left: 0 !important;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0 16.61px 16.61px 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.slick-dots > li {
+  display: block;
+  width: 7.5px;
+  height: 7.5px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(31, 32, 65, 0.3);
+          box-shadow: 0 5px 5px rgba(31, 32, 65, 0.3);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.slick-dots > li > button {
+  border: none;
+  background: transparent;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-active {
+  background: #fff;
+  border: none;
+}
