@@ -1,0 +1,22 @@
+.sidebar {
+  width: auto;
+  padding-left: 140px;
+  padding-right: 59px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 950px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1149px) {
+  .sidebar {
+    width: 100%;
+    max-width: calc(30% + 30px);
+    padding: 0 59px 0 24px;
+  }
+}
