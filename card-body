@@ -1,0 +1,3 @@
+.cm-card-body {
+  padding: 0;
+}
