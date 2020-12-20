@@ -1,0 +1,16 @@
+/*Заголовок списка*/
+.forward-title {
+  color: #1f2041;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .forward-title {
+    font-size: 18px;
+  }
+}
