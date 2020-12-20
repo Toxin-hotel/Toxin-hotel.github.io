@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <!-- Дополнительно -->
+     <meta name="viewport", content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie-edge">
+     <!-- Заголовок -->
+     <title>Hotel Toxin</title>
+     <!-- Подключение иконного шрифта -->
+     <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+    />
+    <!-- Подключение фреймворка Bootstrap 4 -->
+    <link   rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"
+    >
+    <!-- Подключение шрифта на веб-странице -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Стили слайдера Slick -->
+    <link rel="stylesheet" href="./slider/styles/styles/styles.css">
+    <link rel="stylesheet" href="./project/common.css">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./logo/logo.css">
+    <link rel="stylesheet" href="./inner_logo/wing.css">
+    <link rel="stylesheet" href="./text-logo/text-logo.css">
+    <!-- <link rel="stylesheet" href="./menu/menu.css"> -->
+    <link rel="stylesheet" href="./menu-piece/menu-piece.css">
+    <!-- <link rel="stylesheet" href="./navbar.css"> -->
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <!-- <link rel="stylesheet" href="./link/link.css"> -->
+    <link rel="stylesheet" href="./sign-in/sign-in.css">
+    <link rel="stylesheet" href="./sign-up/sign-up.css">
+    <link rel="stylesheet" href="./caller/button_caller.css">
+    <link rel="stylesheet" href="./sidebar/sidebar.css">
+    <link rel="stylesheet" href="./subhead/subhead.css">
+    <link rel="stylesheet" href="./select/select.css">
+    <link rel="stylesheet" href="./checkbox/checkbox.css">
+    <link rel="stylesheet" href="./completebox/completebox.css">
+    <link rel="stylesheet" href="./self-price/self-price.css">
+    <link rel="stylesheet" href="./range-price/range-price.css">
+    <link rel="stylesheet" href="./range-slider/range-slider.css">
+    <link rel="stylesheet" href="./subtitle/subtitle.css">
+    <link rel="stylesheet" href="./field/filed.css">
+    <link rel="stylesheet" href="./card/card.css">
+    <link rel="stylesheet" href="./card-body/card-body.css">
+    <link rel="stylesheet" href="./grid-complex/grid-complex.css">
+    <link rel="stylesheet" href="./grid/grid.css">
+    <link rel="stylesheet" href="./horiz-line/horiz-line.css">
+    <link rel="stylesheet" href="./complex-number/complex-number.css">
+    <link rel="stylesheet" href="./number/number.css">
+    <link rel="stylesheet" href="./value/value.css">
+    <link rel="stylesheet" href="./status/status.css">
+    <link rel="stylesheet" href="./price/price.css">
+    <link rel="stylesheet" href="./sum/sum.css">
+    <link rel="stylesheet" href="./today/today.css">
+    <link rel="stylesheet" href="./star/star.css">
+    <link rel="stylesheet" href="./review/review.css">
+    <link rel="stylesheet" href="./count-reviews/count-reviews.css">
+    <link rel="stylesheet" href="./text-review/text-review.css">
+    <link rel="stylesheet" href="./rating/rating.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./rectangle/rectangle.css">
+    <link rel="stylesheet" href="./list-title/list-title.css">
+    <link rel="stylesheet" href="./list-title/list-title.css">
+    <link rel="stylesheet" href="./list-item/list-item.css">
+    <link rel="stylesheet" href="./email/email.css">
+    <link rel="stylesheet" href="./label/label.css">
+    <link rel="stylesheet" href="./copyright/copyright.css ">
+    <link rel="stylesheet" href="./social-icon/social-icon.css">
+    <!-- <style>
+        .test {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: flex-end;
+            order: 0;
+        }
+
+        .root-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .root-list > .root-list__item {
+            display: flex;
+            margin-right: 20px;
+            width: max-content;
+            height: max-content;
+        }
+
+        .root-list > .root-list__item:nth-child(6),
+        .root-list > .root-list__item:last-child {
+            display: none;
+        }
+
+        .root-list > .root-list__item:last-child {
+            margin-right: 0;
+        }
+
+        .root-list__link {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(31, 32, 65, 0.5);
+            padding: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .root-list__link:hover {
+            text-decoration: none;
+            color: rgba(31, 32, 65, 0.5);
+        }
+
+        .visually {
+            display: none;
+        }
+
+        @media screen and (max-width: 1149px) {
+            .root-list {
+                display: block;
+            }
+
+            .root-list > .root-list__item {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: max-content;
+                height: 44px;
+            }
+
+            .root-list > .root-list__item:nth-child(6),
+            .root-list > .root-list__item:last-child {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 22px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+            }
+
+            .root-list > .root-list__item:nth-child(6) {
+                background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+                border: none;
+            }
+
+            .root-list > .root-list__item:nth-child(6) > .root-list__link {
+                color: #fff;
+            }
+
+            .root-list > .root-list__item:last-child {
+                background: #fff;
+                border: 2px solid #bc9cff;
+            }
+
+            .root-list > .root-list__item:last-child > .root-list__link {
+                color: #bc9cff;
+            }
+
+            .root-list > .root-list__item:last-child {
+                margin-bottom: 0;
+            }
+
+            .root-list--visible {
+                display: none;
+            }
+
+            .visually {
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: 1150px) {
+            .root-list {
+                align-items: center;
+            }
+        }
+
+        .menu-call__humburger {
+            order: -1;
+        }
+
+        .chevron-down::after {
+            content: '\f107';
+            font-family: 'Font Awesome 5 Pro';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    </style> -->
+</head>
+    <body class="page">
+        <header class="header">
+            <div class="header__container-logo">
+                <div class="text-logo">
+                    Toxin
+                </div>
+                <div class="header__css-logo">
+                    <div class="logo">
+                        <div class="wing wing--large"></div>
+                        <div class="wing wing--small"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="header__complicated-menu">
+                <div class="header__wrapper">
+                    <div class="menu-call">
+                        <button type="button" class="menu-call__humburger">
+                            <span class="menu-call__shower"></span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="menu-call test">
+                <!-- Вставляем меню в этот блок -->
+            </div>
+            <div class="header__entrance">
+                <div class="header__sign-in">
+                    <button class="sign-in">Войти</button>
+                </div>
+                <div class="header__sign-up">
+                    <button class="sign-up">Зарегистрироваться</button>
+                </div>
+            </div>
+        </header>
+        <main class="content" style="min-height: 100%;">
+            <article class="content__select">
+                <div class="grid-complex">
+                    <div class="sidebar">
+                        <div class="sidebar__wrapper sidebar__wrapper--temp">
+                            <div class="subhead">даты пребывания в отеле</div>
+                        </div>
+                        <div class="sidebar__dropdownbox sidebar__dropdownbox--temp">
+                            <!-- Компонент селект выбора периода -->
+                        </div>
+                        <div class="sidebar__wrapper sidebar__wrapper--guest">
+                            <div class="subhead">гости</div>
+                        </div>
+                        <div class="sidebar__dropdownbox sidebar__dropdownbox--guets">
+                            <!-- Компонент селект выбора количества посетителей -->
+                        </div>
+                        <div class="sidebar__wrapper sidebar__wrapper--range">
+                            <div class="subhead">диапазон цены</div>
+                            <div class="range-price" style="display: flex;">
+                                <div class="self-price">
+                                    5000
+                                </div>
+                                <div class="range-price__rub">
+                                    <span class="rub"></span>
+                                </div>
+                                <pre> </pre>-<pre> </pre>
+                                <div class="self-price">
+                                    10 000
+                                </div>
+                                <div class="range-price__rub">
+                                    <span class="rub"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="root-range" class="range-box">
+                            <label id="start-piece" class="range-box__piece range-box__piece--start">
+                                <!-- Вставляем range-slider__start -->
+                            </label>
+                            <label id="end-piece" class="range-box__piece range-box__piece--end">
+                                <!-- Вставляем компонент range-slider__end -->
+                            </label>
+                        </div>
+                        <div class="sidebar__merge">
+                            <div class="sidebar__outwrapper">
+                                <div class="sidebar__wrapper sidebar__wrapper--estabilish">
+                                    <div class="subhead">правила дома</div>
+                                </div>
+                                <div class="sidebar__elembox">
+                                    <label class="cm-checkbox">
+                                        <input type="checkbox" class="cm-checkbox__input" checked>
+                                        <span class="cm-checkbox__fake"></span>
+                                        <span class="cm-checkbox__text">Можно курить</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar__elembox">
+                                    <label class="cm-checkbox">
+                                        <input type="checkbox" class="cm-checkbox__input" checked>
+                                        <span class="cm-checkbox__fake"></span>
+                                        <span class="cm-checkbox__text">Можно с питомцами</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar__elembox">
+                                    <label class="cm-checkbox">
+                                        <input type="checkbox" class="cm-checkbox__input" checked>
+                                        <span class="cm-checkbox__fake"></span>
+                                        <span class="cm-checkbox__text cm-checkbox__text--uniq">Можно пригласить гостей (до 10 человек)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sidebar__outwrapper">
+                                <div class="sidebar__wrapper sidebar__wrapper--available">
+                                    <div class="subhead">доступность</div>
+                                </div>
+                                <div class="sidebar__extendbox">
+                                    <label class="extendcheck">
+                                        <div class="extendcheck__grid">
+                                            <div class="extendcheck__clnbox">
+                                                <input type="checkbox" class="extendcheck__input">
+                                                <span class="extendcheck__fake"></span>
+                                            </div>
+                                            <div class="extendcheck__wrapper">
+                                                <span class="extendcheck__textlarge">Широкий коридор</span>
+                                                <span class="extendcheck__textsmall">Ширина коридоров в номере не менее 91см.</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="sidebar__extendbox">
+                                    <label class="extendcheck">
+                                        <div class="extendcheck__grid">
+                                            <div class="extendcheck__clnbox">
+                                                <input type="checkbox" class="extendcheck__input">
+                                                <span class="extendcheck__fake"></span>
+                                            </div>
+                                            <div class="extendcheck__wrapper">
+                                                <span class="extendcheck__textlarge">Помощник для инвалидов</span>
+                                                <span class="extendcheck__textsmall">На 1 этаже вас встретит специалист и проводит до номера</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__wrapper sidebar__wrapper--comfort">
+                            <div class="subhead">удобства номера</div>
+                        </div>
+                        <div class="sidebar__dropdownbox sidebar__dropdownbox--short">
+                            <!-- Компонент для выбора удобства номера -->
+                        </div>
+                        <div class="sidebar__dropdownbox sidebar__dropdownbox--long">
+                            <!-- Компонент для выбора доп. услуг -->
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="content__wrapper">
+                            <h4 class="subtitle">
+                                Номера, которые мы для вас подобрали
+                            </h4>
+                        </div>
+                        <div class="field">
+                            <div class="field__line">
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images/room888.png" class="card-slider__img" alt="room888"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images/room856.png" class="card-slider__img" alt="room856">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images/room678.png" class="card-slider__img" alt="room678">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__14/room840.png" class="card-slider__img" alt="room840"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__14/room740.png" class="card-slider__img" alt="room740">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__14/room450.png" class="card-slider__img" alt="room450">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__23/room444.png" class="card-slider__img" alt="room444"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__23/room980.png" class="card-slider__img" alt="room980">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__23/room982.png" class="card-slider__img" alt="room982">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field__line">
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__12/room856.png" class="card-slider__img" alt="room856"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__12/room678.png" class="card-slider__img" alt="room678">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__12/room666.png" class="card-slider__img" alt="room666">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__21/room444.png" class="card-slider__img" alt="room444"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__21/room450.png" class="card-slider__img" alt="room450">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__21/room740.png" class="card-slider__img" alt="room740">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__24/image__441.jpg" class="card-slider__img" alt="room441"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__24/image__442.jpg" class="card-slider__img" alt="room442">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__24/room444.png" class="card-slider__img" alt="room444">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field__line">
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__13/room678.png" class="card-slider__img" alt="room678"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__13/room666.png" class="card-slider__img" alt="room666">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__13/room840.png" class="card-slider__img" alt="room840">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <!-- Обертка для карточки -->
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__22/room444.png" class="card-slider__img" alt="room444"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__22/room450.png" class="card-slider__img" alt="room450">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__22/room980.png" class="card-slider__img" alt="room980">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <!-- Обертка для карточки -->
+                                <div class="field__wrapper">
+                                    <div class="card cm-card">
+                                        <div class="card-slider">
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__31/image311.jpg" class="card-slider__img" alt="room311"> 
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__31/room980.png" class="card-slider__img" alt="room312">
+                                            </div>
+                                            <div class="card-slider__item">
+                                                <img src="./slider/assets/assets/images__31/image312.jpg" class="card-slider__img" alt="room980">
+                                            </div>
+                                        </div>
+                                        <div class="card-body cm-card-body">
+                                            <div class="cm-card-body__relation">
+                                                <div class="complex-number">
+                                                    <div class="complex-number__num">
+                                                        <span class="number">№</span>
+                                                    </div>
+                                                    <div class="complex-number__val">
+                                                        <span class="value">888</span>
+                                                    </div>
+                                                    <div class="complex-number__state">
+                                                        <span class="status">люкс</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="price__sum">
+                                                        <span class="sum">9 900</span>
+                                                    </div>
+                                                    <div class="price__rub">
+                                                        <span class="rub"></span>
+                                                    </div>
+                                                    <div class="price__today">
+                                                        <span class="today">в сутки</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm-card-body__contain">
+                                                <div class="horizline"></div>
+                                            </div>
+                                            <div class="cm-card-body__user">
+                                                <div class="rating">
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                    <div class="star star--active"></div>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div class="reviews__target">
+                                                        <span class="count-reviews">145</span>
+                                                    </div>
+                                                    <div class="reviews__wrapper">
+                                                        <span class="text-reviews">Отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="rectangle">
+                <div class="rectangle__container">
+                    <div class="rectangle__mix">
+                        <div class="rectangle__logo">
+                            <div class="logo">
+                                <div class="wing wing--large"></div>
+                                <div class="wing wing--small"></div>
+                            </div>
+                            <div class="rectangle__label">
+                                <div class="text-logo">Toxin</div>
+                            </div>
+                        </div>
+                        <div class="rectangle__description">
+                            <div class="label">
+                                Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отдельные взгляды"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle__list">
+                        <aside class="forward-list">
+                            <div class="forward-list__wrapper">
+                                <div class="forward-title">Навигация</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">О нас</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Новости</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Служба поддержки</div>
+                            </div>
+                            <div class="forward-item">Услуги</div>
+                        </aside>
+                    </div>
+                    <div class="rectangle__list">
+                        <aside class="forward-list">
+                            <div class="forward-list__wrapper">
+                                <div class="forward-title">О нас</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">О сервисе</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Наша команда</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Вакансии</div>
+                            </div>
+                            <div class="forward-item">Инвесторы</div>
+                        </aside>
+                    </div>
+                    <div class="rectangle__list">
+                        <aside class="forward-list">
+                            <div class="forward-list__wrapper">
+                                <div class="forward-title">Служба поддержки</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Соглашения</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Сообщества</div>
+                            </div>
+                            <div class="forward-list__wrapper">
+                                <div class="forward-item">Связь с нами</div>
+                            </div>
+                            <div class="forward-item forward-item--last">Пустой текст</div>
+                        </aside>
+                    </div>
+                    <div class="rectangle__list">
+                        <div class="list">
+                            <aside class="forward-list">
+                                <div class="forward-list__wrapper">
+                                    <div class="forward-title">Подписка</div>
+                                </div>
+                                <div class="forward-list__wrapper">
+                                    <div class="forward-item forward-item--long">Получайте специальные предложения и новости сервиса</div>
+                                </div>
+                                <div class="forward-list__wrapper">
+                                    <form class="form-list">
+                                        <input type="email" class="email" placeholder="Email">
+                                    </form>
+                                </div>
+                            </aside>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rectangle rectangle--tight">
+                <div class="rectangle__copybox">
+                    <div class="copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
+                </div>
+                <div class="icon__wrapper">
+                    <div class="icon__box">
+                        <div class="social-icon social-icon--tw"></div>
+                    </div>
+                    <div class="icon__box">
+                        <div class="social-icon social-icon--fb"></div>
+                    </div>
+                    <div class="icon__box">
+                        <div class="social-icon social-icon--vk"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Подключение скриптов компонента "Меню" -->
+        <!-- <script src="menu/menu.js"></script> -->
+        <!-- Подключение скриптов компонента "Селект" -->
+        <script src="./select/select.js"></script>
+        <!-- Подключение Jquery -->
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+            crossorigin="anonymous">
+        </script>
+        <!-- Подключение скриптов плагина slick -->
+        <script src="slider/slick-1.8.1/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.card-slider').slick({
+                    arrows: false,
+                    dots: true,
+                    infinite: true,
+                    speed: 0,
+                    fade: true
+                });
+            });
+        </script>
+
+        <script>
+            class Nav {
+                constructor(selector_main, btn_hide_id, btn_type, ...items) {
+                    this.main_box = document.querySelector(selector_main); 
+                    this.btn_hide = document.createElement('button');
+                    this.btn_hide.setAttribute('id', btn_hide_id);
+                    this.type = btn_type;
+                    this.items = items.join('').split(',');
+                    
+                    this.screen = undefined;
+                    this.root_list = null;
+                }
+
+                _addItem(text_of_link) {
+                    const link = document.createElement('a');
+                    link.innerHTML = text_of_link;
+                    const li = document.createElement('li');
+                    li.prepend(link);
+                    const icon = document.createElement('span');
+                    li.append(icon);
+
+                    return li;
+                }
+
+                _createNav() {
+                    const list = document.createElement('ul');
+
+                    for (let j = 0; j < this.items.length; j++) {
+                        var item = this._addItem(this.items[j]);
+                        if ((j === 1) || (j === 4)) {
+                            var chevron = item.querySelector('span');
+                            chevron.classList.add('chevron-down');
+                        }
+                        
+                        list.append(item);
+                        this.main_box.append(list);
+                    }
+
+                    this._navClassNames();
+
+                    return this.main_box;
+                }
+
+                /*
+                    Метод для задания классов списку меню
+                */
+                _navClassNames() {
+                    const link_of_list = Array.from(this.main_box.querySelectorAll('a'));
+                    const item_of_list = Array.from(this.main_box.querySelectorAll('li'));
+                    this.root_list = this.main_box.querySelector('ul');
+
+                    for (let l = 0; l < link_of_list.length; l++) {
+                        link_of_list[l].classList.add('root-list__link');
+                    }
+
+                    for (let i = 0; i < item_of_list.length; i++) {
+                        item_of_list[i].classList.add('root-list__item');
+                    }
+
+                    this.root_list.classList.add('root-list');
+                }
+
+                _screenWidth() {
+                    this.screen = window.innerWidth;
+
+                    return this.screen;
+                }
+
+                _updateWidth() {
+                    this._screenWidth = this._screenWidth.bind(this);
+                    window.addEventListener('resize', this._screenWidth);
+                    this._screenWidth();
+                }
+
+                _createMenuButton() {
+                    const inner = document.createElement('span');
+                    this.btn_hide.setAttribute('type', this.type);
+
+                    if (this.type !== 'button') {
+                        this.type = button;
+                        this.btn_hide.setAttribute('type', this.type);
+                    }
+
+                    this.btn_hide.prepend(inner);
+                    this.main_box.append(this.btn_hide);
+
+                    this._btnClassNames();
+                }
+
+                _btnClassNames() {
+                    this.btn_hide.classList.add('menu-call__humburger');
+                    this.btn_hide.querySelector('span').classList.add('menu-call__shower');
+                }
+
+                start() {
+                    this._createNav();
+                    this._createMenuButton();
+                    this._menuVisible();
+
+                    return this;
+                }
+
+                _menuVisible() {
+                    const visually = this.main_box.querySelector('#menu-call');
+
+                    if (this._screenWidth() >= 1150) {
+                        visually.classList.add('visually');
+                        if (this.root_list.classList.contains('root-list--visible')) {
+                            this.root_list.classList.remove('root-list--visible');
+                        }
+                    } else if (this._screenWidth() < 1150) {
+                        this.root_list.classList.add('root-list--visible');
+                        if (visually.classList.contains('visually')) {
+                            visually.classList.remove('visually');
+                        }
+                    }
+                }
+
+                _open() {
+                    this.root_list.style.display = 'block';
+                }
+
+                _close() {
+                    this.root_list.style.display = 'none';
+                }
+
+                toggle() {
+                    /*
+                        Определить, был ли клик, в 
+                        зависимости от этого вызывать метод _open()
+                        или _close()
+                    */
+
+                    return this;
+                }
+            }
+
+            const menu = new Nav(
+                '.test', 
+                'menu-call', 
+                'button', 
+                ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', 'Войти', 'Зарегистрироваться']
+            );
+
+            menu.start();
+        </script>
+        <script src="range-slider/range-slider_js.js"></script>
+    </body>
+</html>
