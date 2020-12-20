@@ -1,0 +1,24 @@
+/*Однотипные части внутреннего рисунка Логотипа*/
+.wing--large {
+  width: 11.76px;
+  height: 11.76px;
+  border-radius: 0 100px 500px 100px;
+  border-right: 2px solid #8ba4f9;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+  margin-top: 15.29px;
+  margin-left: 7.4px;
+}
+
+.wing--small {
+  width: 9.12px;
+  height: 9.12px;
+  border-radius: 0 100px 100px 0;
+  border-right: 2px solid #66d2ea;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+  margin-top: 14px;
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+}
