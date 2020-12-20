@@ -1,0 +1,17 @@
+.grid-complex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .grid-complex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
