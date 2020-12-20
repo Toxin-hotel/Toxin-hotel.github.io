@@ -1,0 +1,8 @@
+.number {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17px;
+  color: #1f2041;
+  font-size: 14px;
+}
