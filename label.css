@@ -1,0 +1,16 @@
+.label {
+  width: 260px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+@media screen and (max-width: 767px) {
+  .label {
+    width: 210px;
+    font-size: 18px;
+  }
+}
