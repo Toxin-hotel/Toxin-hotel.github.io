@@ -9,6 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 130px 15px 140px;
+  min-width: 320px;
 }
 
 @media screen and (max-width: 1149px) {
