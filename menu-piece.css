@@ -24,13 +24,11 @@
           order: -1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1149px) {
   .menu-call__humburger {
-    position: relative;
     z-index: 999;
     width: 40px;
     height: 40px;
-    border: none;
     padding: 0;
     background: #fff;
     line-height: 0.6;
@@ -38,9 +36,65 @@
     border-radius: 50%;
     -webkit-box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu-call__humburger:focus {
     outline: none;
+  }
+  .menu-call__shower {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+    background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  }
+  .menu-call__shower:focus {
+    outline: none;
+  }
+  .menu-call__shower::before, .menu-call__shower::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+    background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  }
+  .menu-call__shower::before {
+    top: 0;
+    left: 0;
+    margin: -7px 3px;
+  }
+  .menu-call__shower::after {
+    top: 0;
+    left: 0;
+    margin: 7px 3px;
+  }
+  .click > .menu-call__shower {
+    background: transparent;
+  }
+  .click > .menu-call__shower::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin: 0 3px;
+  }
+  .click > .menu-call__shower::after {
+    -webkit-transform: rotate(313deg);
+            transform: rotate(313deg);
+    margin: 0 3px;
+  }
+  .click > .menu-call__shower::before, .click > .menu-call__shower::after {
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
   }
 }
 
