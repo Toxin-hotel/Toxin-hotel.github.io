@@ -10,7 +10,7 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
         if (switcher == 'select') {
             return `
                 <li class="select__item ${cls}" data-type="item" data-value="${item.id}">${item.value}</li>
-            `  
+            `
         } else if (switcher == 'dropdown') {
             return `
                 <div class="select__item select__item--in ${cls}" data-type="item" data-value="${item.id}">
@@ -31,7 +31,6 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
                 </label>
             `
         }
-        
     });
 
     if (switcher == 'select') {
@@ -55,7 +54,7 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
             <div class="select__dropdown">
                 <div class="select__list">
                     ${items.join('')}
-                </div>  
+                </div>
             </div>
         `
     } else if (switcher == 'mark') {
@@ -126,7 +125,6 @@ class Select {
 
     clickHandler(event) {
         const {type} = event.target.dataset;
-        
         if (type === 'input') {
             this.#toggle();
         } else if (type === 'item') {
