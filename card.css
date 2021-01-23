@@ -11,6 +11,10 @@
   margin-right: 12px;
 }
 
+.cm-card--last {
+  margin-right: 0;
+}
+
 @media screen and (max-width: 767px) {
   .central, .cm-card, .cm-card:first-child, .cm-card:nth-child(2) {
     margin: 0 auto;
@@ -28,3 +32,4 @@
     max-width: max-content;
   }
 }
+/*# sourceMappingURL=card.css.map */
