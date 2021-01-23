@@ -1,8 +1,542 @@
 .subtitle {
   font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
 }
+
+.subtitle-copy {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.subtitle-copy__letter {
+  display: block;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+  margin-right: -0.2px;
+}
+
+.subtitle-copy__letter:last-child {
+  margin-right: 0;
+}
+
+.subtitle-copy__letter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-top: 3px;
+  left: 0;
+  height: 85%;
+  width: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -5;
+}
+
+.subtitle-copy__letter--spaced {
+  margin-right: 8px;
+}
+
+.share:hover > .subtitle-copy__letter {
+  color: #fff;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.share:hover > .subtitle-copy__letter::after {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(1)::after {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(1) {
+  -webkit-transition-delay: 110ms;
+          transition-delay: 110ms;
+  -webkit-transform: rotate(0.01deg);
+          transform: rotate(0.01deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(2)::after {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(2) {
+  -webkit-transition-delay: 220ms;
+          transition-delay: 220ms;
+  -webkit-transform: rotate(0.02deg);
+          transform: rotate(0.02deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(3)::after {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(3) {
+  -webkit-transition-delay: 330ms;
+          transition-delay: 330ms;
+  -webkit-transform: rotate(0.03deg);
+          transform: rotate(0.03deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(4)::after {
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(4) {
+  -webkit-transition-delay: 440ms;
+          transition-delay: 440ms;
+  -webkit-transform: rotate(0.04deg);
+          transform: rotate(0.04deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(5)::after {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(5) {
+  -webkit-transition-delay: 550ms;
+          transition-delay: 550ms;
+  -webkit-transform: rotate(0.05deg);
+          transform: rotate(0.05deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(6)::after {
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(6) {
+  -webkit-transition-delay: 660ms;
+          transition-delay: 660ms;
+  -webkit-transform: rotate(0.06deg);
+          transform: rotate(0.06deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(7)::after {
+  -webkit-transition-delay: 700ms;
+          transition-delay: 700ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(7) {
+  -webkit-transition-delay: 770ms;
+          transition-delay: 770ms;
+  -webkit-transform: rotate(0.07deg);
+          transform: rotate(0.07deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(8)::after {
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(8) {
+  -webkit-transition-delay: 880ms;
+          transition-delay: 880ms;
+  -webkit-transform: rotate(0.08deg);
+          transform: rotate(0.08deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(9)::after {
+  -webkit-transition-delay: 900ms;
+          transition-delay: 900ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(9) {
+  -webkit-transition-delay: 990ms;
+          transition-delay: 990ms;
+  -webkit-transform: rotate(0.09deg);
+          transform: rotate(0.09deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(10)::after {
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(10) {
+  -webkit-transition-delay: 1100ms;
+          transition-delay: 1100ms;
+  -webkit-transform: rotate(0.1deg);
+          transform: rotate(0.1deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(11)::after {
+  -webkit-transition-delay: 1100ms;
+          transition-delay: 1100ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(11) {
+  -webkit-transition-delay: 1210ms;
+          transition-delay: 1210ms;
+  -webkit-transform: rotate(0.11deg);
+          transform: rotate(0.11deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(12)::after {
+  -webkit-transition-delay: 1200ms;
+          transition-delay: 1200ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(12) {
+  -webkit-transition-delay: 1320ms;
+          transition-delay: 1320ms;
+  -webkit-transform: rotate(0.12deg);
+          transform: rotate(0.12deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(13)::after {
+  -webkit-transition-delay: 1300ms;
+          transition-delay: 1300ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(13) {
+  -webkit-transition-delay: 1430ms;
+          transition-delay: 1430ms;
+  -webkit-transform: rotate(0.13deg);
+          transform: rotate(0.13deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(14)::after {
+  -webkit-transition-delay: 1400ms;
+          transition-delay: 1400ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(14) {
+  -webkit-transition-delay: 1540ms;
+          transition-delay: 1540ms;
+  -webkit-transform: rotate(0.14deg);
+          transform: rotate(0.14deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(15)::after {
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(15) {
+  -webkit-transition-delay: 1650ms;
+          transition-delay: 1650ms;
+  -webkit-transform: rotate(0.15deg);
+          transform: rotate(0.15deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(16)::after {
+  -webkit-transition-delay: 1600ms;
+          transition-delay: 1600ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(16) {
+  -webkit-transition-delay: 1760ms;
+          transition-delay: 1760ms;
+  -webkit-transform: rotate(0.16deg);
+          transform: rotate(0.16deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(17)::after {
+  -webkit-transition-delay: 1700ms;
+          transition-delay: 1700ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(17) {
+  -webkit-transition-delay: 1870ms;
+          transition-delay: 1870ms;
+  -webkit-transform: rotate(0.17deg);
+          transform: rotate(0.17deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(18)::after {
+  -webkit-transition-delay: 1800ms;
+          transition-delay: 1800ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(18) {
+  -webkit-transition-delay: 1980ms;
+          transition-delay: 1980ms;
+  -webkit-transform: rotate(0.18deg);
+          transform: rotate(0.18deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(19)::after {
+  -webkit-transition-delay: 1900ms;
+          transition-delay: 1900ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(19) {
+  -webkit-transition-delay: 2090ms;
+          transition-delay: 2090ms;
+  -webkit-transform: rotate(0.19deg);
+          transform: rotate(0.19deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(20)::after {
+  -webkit-transition-delay: 2000ms;
+          transition-delay: 2000ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(20) {
+  -webkit-transition-delay: 2200ms;
+          transition-delay: 2200ms;
+  -webkit-transform: rotate(0.2deg);
+          transform: rotate(0.2deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(21)::after {
+  -webkit-transition-delay: 2100ms;
+          transition-delay: 2100ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(21) {
+  -webkit-transition-delay: 2310ms;
+          transition-delay: 2310ms;
+  -webkit-transform: rotate(0.21deg);
+          transform: rotate(0.21deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(22)::after {
+  -webkit-transition-delay: 2200ms;
+          transition-delay: 2200ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(22) {
+  -webkit-transition-delay: 2420ms;
+          transition-delay: 2420ms;
+  -webkit-transform: rotate(0.22deg);
+          transform: rotate(0.22deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(23)::after {
+  -webkit-transition-delay: 2300ms;
+          transition-delay: 2300ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(23) {
+  -webkit-transition-delay: 2530ms;
+          transition-delay: 2530ms;
+  -webkit-transform: rotate(0.23deg);
+          transform: rotate(0.23deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(24)::after {
+  -webkit-transition-delay: 2400ms;
+          transition-delay: 2400ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(24) {
+  -webkit-transition-delay: 2640ms;
+          transition-delay: 2640ms;
+  -webkit-transform: rotate(0.24deg);
+          transform: rotate(0.24deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(25)::after {
+  -webkit-transition-delay: 2500ms;
+          transition-delay: 2500ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(25) {
+  -webkit-transition-delay: 2750ms;
+          transition-delay: 2750ms;
+  -webkit-transform: rotate(0.25deg);
+          transform: rotate(0.25deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(26)::after {
+  -webkit-transition-delay: 2600ms;
+          transition-delay: 2600ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(26) {
+  -webkit-transition-delay: 2860ms;
+          transition-delay: 2860ms;
+  -webkit-transform: rotate(0.26deg);
+          transform: rotate(0.26deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(27)::after {
+  -webkit-transition-delay: 2700ms;
+          transition-delay: 2700ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(27) {
+  -webkit-transition-delay: 2970ms;
+          transition-delay: 2970ms;
+  -webkit-transform: rotate(0.27deg);
+          transform: rotate(0.27deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(28)::after {
+  -webkit-transition-delay: 2800ms;
+          transition-delay: 2800ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(28) {
+  -webkit-transition-delay: 3080ms;
+          transition-delay: 3080ms;
+  -webkit-transform: rotate(0.28deg);
+          transform: rotate(0.28deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(29)::after {
+  -webkit-transition-delay: 2900ms;
+          transition-delay: 2900ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(29) {
+  -webkit-transition-delay: 3190ms;
+          transition-delay: 3190ms;
+  -webkit-transform: rotate(0.29deg);
+          transform: rotate(0.29deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(30)::after {
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(30) {
+  -webkit-transition-delay: 3300ms;
+          transition-delay: 3300ms;
+  -webkit-transform: rotate(0.3deg);
+          transform: rotate(0.3deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(31)::after {
+  -webkit-transition-delay: 3100ms;
+          transition-delay: 3100ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(31) {
+  -webkit-transition-delay: 3410ms;
+          transition-delay: 3410ms;
+  -webkit-transform: rotate(0.31deg);
+          transform: rotate(0.31deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(32)::after {
+  -webkit-transition-delay: 3200ms;
+          transition-delay: 3200ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(32) {
+  -webkit-transition-delay: 3520ms;
+          transition-delay: 3520ms;
+  -webkit-transform: rotate(0.32deg);
+          transform: rotate(0.32deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(33)::after {
+  -webkit-transition-delay: 3300ms;
+          transition-delay: 3300ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(33) {
+  -webkit-transition-delay: 3630ms;
+          transition-delay: 3630ms;
+  -webkit-transform: rotate(0.33deg);
+          transform: rotate(0.33deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(34)::after {
+  -webkit-transition-delay: 3400ms;
+          transition-delay: 3400ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(34) {
+  -webkit-transition-delay: 3740ms;
+          transition-delay: 3740ms;
+  -webkit-transform: rotate(0.34deg);
+          transform: rotate(0.34deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(35)::after {
+  -webkit-transition-delay: 3500ms;
+          transition-delay: 3500ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(35) {
+  -webkit-transition-delay: 3850ms;
+          transition-delay: 3850ms;
+  -webkit-transform: rotate(0.35deg);
+          transform: rotate(0.35deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(36)::after {
+  -webkit-transition-delay: 3600ms;
+          transition-delay: 3600ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(36) {
+  -webkit-transition-delay: 3960ms;
+          transition-delay: 3960ms;
+  -webkit-transform: rotate(0.36deg);
+          transform: rotate(0.36deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(37)::after {
+  -webkit-transition-delay: 3700ms;
+          transition-delay: 3700ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(37) {
+  -webkit-transition-delay: 4070ms;
+          transition-delay: 4070ms;
+  -webkit-transform: rotate(0.37deg);
+          transform: rotate(0.37deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(38)::after {
+  -webkit-transition-delay: 3800ms;
+          transition-delay: 3800ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(38) {
+  -webkit-transition-delay: 4180ms;
+          transition-delay: 4180ms;
+  -webkit-transform: rotate(0.38deg);
+          transform: rotate(0.38deg);
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(39)::after {
+  -webkit-transition-delay: 3900ms;
+          transition-delay: 3900ms;
+}
+
+.share:hover > .subtitle-copy__letter:nth-child(39) {
+  -webkit-transition-delay: 4290ms;
+          transition-delay: 4290ms;
+  -webkit-transform: rotate(0.39deg);
+          transform: rotate(0.39deg);
+}
+
+@media screen and (max-width: 719px) {
+  .subtitle {
+    display: block !important;
+    text-align: center;
+  }
+  .subtitle-copy {
+    display: none;
+  }
+}
+/*# sourceMappingURL=subtitle.css.map */
