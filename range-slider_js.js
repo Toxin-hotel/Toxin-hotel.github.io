@@ -27,7 +27,7 @@ class Range {
     settings(set_elem_id) {
         /*
             Проверяем принимаемые опции
-            Если приходит строковый тип данных, то
+            Если приходит строковый тип данных, то 
             выполняем преобразование в числовой
         */
 
@@ -67,7 +67,7 @@ class Range {
             this.range_box.prepend(this.base_input);
             this.range_box.append(this.current);
         } else {
-
+            
             /*
                 Поведение пол умолчанию,
                 range-slider - название класса для
@@ -133,7 +133,7 @@ class Range {
     _current() {
         this.default = this.min + (this.max - this.min) / 2;
         this.current.innerHTML = this.default;
-        this.base_input.setAttribute('value', this.default);
+        this.base_input.setAttribute('value', this.default); 
     }
 
     _watch() {
@@ -198,7 +198,7 @@ const start = new Range('range', 0, 5000, 100, 2500, 'horizontal');
         .orientation()
         .posAttr()
         .classes(
-            'range-box__input',
+            'range-box__input', 
             'range-box__state'
         );
 const end = new Range('range', 5000, 10000, 100, 8500, 'horizontal');
@@ -208,6 +208,6 @@ const end = new Range('range', 5000, 10000, 100, 8500, 'horizontal');
         .orientation()
         .posAttr()
         .classes(
-            'range-box__input',
+            'range-box__input', 
             'range-box__state'
         );
