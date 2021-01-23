@@ -1,0 +1,125 @@
+.btn,
+.btn:link,
+.btn:visited {
+  position: relative;
+  border-radius: 22px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  background: #fff;
+  color: rgba(31, 32, 65, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+.btn--sign-in,
+.btn--sign-in:link,
+.btn--sign-in:visited {
+  width: 87px;
+  height: 34px;
+  background: #fff;
+  color: #bc9cff;
+  border: 2px solid #bc9cff;
+}
+
+.btn--sign-in:hover {
+  color: #bc9cff;
+}
+
+.btn--sign-up,
+.btn--sign-up:link,
+.btn--sign-up:visited {
+  width: 196px;
+  height: 34px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  border: none;
+  color: #fff;
+}
+
+.btn--sign-up:hover {
+  color: #fff;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.2);
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.btn:hover::after {
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+}
+
+.btn--action {
+  width: 100%;
+  height: 44px;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes waves {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.waves {
+  -webkit-animation: waves 0.5s ease-in-out backwards;
+          animation: waves 0.5s ease-in-out backwards;
+}
+/*# sourceMappingURL=btn.css.map */
