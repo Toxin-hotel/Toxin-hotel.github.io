@@ -20,3 +20,10 @@
     padding: 0 59px 0 24px;
   }
 }
+
+@media screen and (min-width: 1150px) and (max-width: 1399px) {
+  .sidebar {
+    padding: 0 calc(59px / 2) 0 24px;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */
