@@ -1,0 +1,21 @@
+.input-data {
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 13px 0 13px 15px;
+  cursor: pointer;
+}
+
+.input-data:focus {
+  outline: none;
+}
+/*# sourceMappingURL=input-data.css.map */
