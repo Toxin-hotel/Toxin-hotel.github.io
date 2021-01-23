@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.switch__invisibility {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.switch__slider {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  /*Подумать, какая сюда подойдет функция*/
+}
+
+.switch__slider::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 4px 4px;
+  background: rgba(31, 32, 65, 0.25);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch__slider--round {
+  border-radius: 10px;
+}
+
+.switch__slider--round::before {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=switch.css.map */
