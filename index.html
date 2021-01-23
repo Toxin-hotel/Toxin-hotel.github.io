@@ -33,10 +33,7 @@
     <link rel="stylesheet" href="Toxin-hotel.github.io/logo.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/wing.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/text-logo.css">
-    <link rel="stylesheet" href="Toxin-hotel.github.io/menu-piece.css">
-    <link rel="stylesheet" href="Toxin-hotel.github.io/navbar.css">
-    <link rel="stylesheet" href="Toxin-hotel.github.io/sign-in.css">
-    <link rel="stylesheet" href="Toxin-hotel.github.io/sign-up.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/btn.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/content.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/sidebar.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/subhead.css">
@@ -73,7 +70,385 @@
     <link rel="stylesheet" href="Toxin-hotel.github.io/email.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/label.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/copyright.css ">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/social-icons.css">
     <link rel="stylesheet" href="Toxin-hotel.github.io/social-icon.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/input-data.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/overlay.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/modal-window.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/modal-body.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/form.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/form-title.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/fullscreen-width.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/switch.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/label-field.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/cust-btn.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/radio.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/text-description.css">
+    <link rel="stylesheet" href="Toxin-hotel.github.io/account-exist.css">
+    <style>
+        .action { /*???*/
+            width: 99px;
+            height: 44px;
+            background: #fff;
+            border: 2px solid #bc9cff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+            border-radius: 22px;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #bc9cff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media screen and (min-width: 1150px) { /*Временный стиль*/
+            .menu-call__humburger {
+                display: none;
+            }
+        }
+
+        .text-logo {
+            z-index: 100;
+        }
+
+        .form__cntr {
+            display: flex;
+        }
+
+        .form__wrapper-radio {
+            display: flex;
+        }
+
+        .form__wrapper-radio:last-child .form__container-label {
+            padding-right: 0;
+        }
+
+        .form__container-label {
+            padding: 0 20px 0 10px;
+        }
+
+        .radio {
+            display: block;
+            cursor: pointer;
+        }
+
+        .radio-hidden {
+            position: absolute;
+            appearance: none;
+            opacity: 0;
+        }
+
+        .radio-hidden:checked + .label {
+            border-color: rgba(31, 32, 65, 0.25);
+        }
+
+        .label {
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #bc9cff;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .label::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 3px;
+            margin-left: 3px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+            opacity: 0.1;
+            border-radius: 10px;
+            transform: scale(0);
+            transition: all 0.75s ease-in-out;
+            pointer-events: none;
+        }
+
+        .radio-hidden:hover + .label::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 3px;
+            margin-left: 3px;
+            transform: scale(3.6);
+        }
+
+        .radio-hidden:checked + .label::after {
+            transform: scale(1);
+            opacity: 1;
+            transition: all 0.75s ease-in-out;
+        }
+
+        .text-description--blocked {
+            display: block;
+        }
+
+        .header__wrapper-humburger {
+            display: flex;
+            align-items: center;
+            padding-bottom: 15px;
+            width: max-content;
+            margin-left: auto;
+        }
+
+        .header__menu {
+            position: absolute;
+            right: 0;
+            width: max-content;
+            z-index: 10;
+        }
+
+        .header__content--mobile {
+            background: #fff;
+            display: flex;
+            flex-flow: column;
+            padding: 0 24px 0 5px;
+        }
+
+        .btn-humburger {
+            position: relative;
+            z-index: 999;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            background: #fff;
+            line-height: 0.6;
+            border: 2px solid #8ba4f9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.75s ease-in-out;
+            cursor: pointer;
+        }
+
+        .btn-humburger:hover {
+            box-shadow: 0 10px 20px rgba(31, 32, 65, 0.24);
+        }
+
+        .btn-humburger::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: transparent;
+            transition: all 1s ease;
+        }
+
+        .btn-humburger:hover::after {
+            background: #fff;
+            opacity: 0;
+            transform: scaleX(1.4) scaleY(1.6);
+        }
+
+        .btn-humburger__element {
+            position: relative;
+            display: block;
+            width: 25px;
+            height: 2px;
+        }
+
+        .btn-humburger__element::before,
+        .btn-humburger__element::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 18px;
+            height: 2px;
+        }
+
+        .btn-humburger__element,
+        .btn-humburger__element::before,
+        .btn-humburger__element::after,
+        .btn-humburger__element:hover::before,
+        .btn-humburger__element:hover::after,
+        .btn-humburger__element:focus::before,
+        .btn-humburger__element:focus::after {
+            background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+        }
+
+        .btn-humburger__element::before {
+            top: 0;
+            left: 0;
+            margin: -7px 3px;
+        }
+
+        .btn-humburger__element::after {
+            top: 0;
+            left: 0;
+            margin: 7px 3px;
+        }
+
+        .btn-humburger__element:focus {
+            outline: none;
+        }
+
+        .action-down > .btn-humburger__element {
+            background: transparent;
+        }
+
+        .action-down > .btn-humburger__element::before {
+            transform: rotate(45deg);
+            margin: 0 3px;
+        }
+
+        .action-down > .btn-humburger__element::after {
+            transform: rotate(313deg);
+            margin: 0 3px;
+        }
+
+        .action-down > .btn-humburger__element::before,
+        .action-down > .btn-humburger__element::after {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .slowdown {
+            transition: all 0.75s ease-in-out;
+        }
+
+        .cm-menu {
+            background: #fff;
+            height: max-content;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .cm-menu__header {
+            margin: 0;
+            width: 100%;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button.cm-menu__button {
+            border-radius: 0;
+        }
+
+        .cm-menu__button:focus {
+            border-color: transparent;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .cm-submenu {
+            width: 100%;
+            border: none;
+        }
+
+        .cm-menu__item {
+            border-top: 2px solid #8ba4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+
+        .cm-menu__item--opened .cm-menu__header::after {
+            content: "\f078";
+            font-family: 'Font Awesome 5 Pro';
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+        }
+
+        .cm-menu__item:last-child {
+            border-top: none;
+        }
+
+        .cm-menu__item {
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cm-menu__item .cm-menu__button {
+            color: rgba(31, 32, 65, 0.5);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 17px;
+            cursor: pointer;
+        }
+
+        .cm-menu__item:first-child .cm-menu__button {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .cm-menu__item:nth-child(6) .cm-menu-header__btn-box,
+        .cm-menu__item:last-child .cm-menu-header__btn-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 1139px) {
+            .header__content {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1140px) {
+            .header__content--mobile {
+                display: none;
+            }
+        }
+
+        .cm-menu:not(.view) {
+            display: none;
+        }
+
+        .cm-menu__button {
+            display: block;
+            width: 100%;
+            height: 34px;
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+        .cm-submenu__menu-body {
+            border-top: 2px solid #8ba4f9;
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menu__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            height: 34px;
+            color: rgba(31, 32, 65, 0.5);
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
 </head>
     <body class="page">
         <header class="header">
@@ -88,15 +463,140 @@
                     </div>
                 </div>
             </div>
-            <div class="menu-call">
-                <!-- Вставляем меню в этот блок -->
+            <!-- <div class="menu-call">
+
+            </div> -->
+            <div class="header__menu">
+                <div class="header__content--mobile">
+                    <!-- Верстка кнопки -->
+                    <div class="header__wrapper-humburger">
+                        <div class="btn-humburger">
+                            <div class="btn-humburger__element"></div>
+                        </div>
+                    </div>
+                    <div class="accordion cm-menu">
+                        <div class="accordion-item cm-menu__item">
+                            <h2 class="accordion-header cm-menu__header">
+                                <button
+                                    class="accordion-button cm-menu__button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                >
+                                    О нас
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item cm-menu__item cm-menu__item--opened">
+                            <h2 class="accordion-header cm-menu__header">
+                                <button
+                                    class="accordion-button cm-menu__button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                >
+                                    Услуги
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="
+                                    accordion-collapse
+                                    cm-submenu
+                                    collapse
+                                    slowdown
+                                "
+                                data-bs-parent="#accordionExample"
+
+                            >
+                                <div class="accordion-body cm-submenu__menu-body">
+                                    <ul class="menu">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Услуга 1</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Услуга 2</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Услуга 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item cm-menu__item">
+                            <h2 class="accordion-header cm-menu__header">
+                                <button class="accordion-button cm-menu__button collapsed">
+                                    Вакансии
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item cm-menu__item">
+                            <h2 class="accordion-header cm-menu__header">
+                                <button class="accordion-button cm-menu__button collapsed">
+                                    Новости
+                                </button>
+                            </h2>
+                        </div>
+                        <div class="accordion-item cm-menu__item cm-menu__item--opened">
+                            <h2 class="accordion-header cm-menu__header">
+                                <button
+                                    class="accordion-button cm-menu__button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                >
+                                    Соглашения
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseFive"
+                                class="
+                                    accordion-collapse
+                                    cm-submenu
+                                    collapse
+                                    slowdown
+                                "
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body cm-submenu__menu-body">
+                                    <ul class="menu">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Соглашение 1</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Соглашение 2</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Соглашение 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item cm-menu__item">
+                            <div class="accordion-header cm-menu__header">
+                                <div class="cm-menu-header__btn-box">
+                                    <button class="btn btn--mobile btn--sign-in">Войти</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item cm-menu__item">
+                            <div class="accordion-header cm-menu__header">
+                                <div class="cm-menu-header__btn-box">
+                                    <button class="btn btn--mobile btn--sign-up">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__content">
+                    <!-- Особое меню для ПК -->
+                </div>
             </div>
-            <div class="header__entrance">
+            <div class="header__entrance"> <!-- написать медиа-запрос, который скрывает этот блок на мобильной версии -->
                 <div class="header__sign-in">
-                    <button class="sign-in">Войти</button>
+                    <button class="btn btn--sign-in">Войти</button>
                 </div>
                 <div class="header__sign-up">
-                    <button class="sign-up">Зарегистрироваться</button>
+                    <button class="btn btn--sign-up">Зарегистрироваться</button>
                 </div>
             </div>
         </header>
@@ -106,19 +606,24 @@
                     <div class="sidebar">
                         <div class="sidebar__wrapper sidebar__wrapper--temp">
                             <div class="subhead">даты пребывания в отеле</div>
+                            <div class="subhead-characters share">
+                                <!-- вставка измененного кода html c текстом -->
+                            </div>
                         </div>
                         <div class="sidebar__dropdownbox sidebar__dropdownbox--temp">
                             <!-- Компонент селект выбора периода -->
                         </div>
                         <div class="sidebar__wrapper sidebar__wrapper--guest">
                             <div class="subhead">гости</div>
+                            <div class="subhead-characters share"></div>
                         </div>
                         <div class="sidebar__dropdownbox sidebar__dropdownbox--guets">
                             <!-- Компонент селект выбора количества посетителей -->
                         </div>
                         <div class="sidebar__wrapper sidebar__wrapper--range">
                             <div class="subhead">диапазон цены</div>
-                            <div class="range-price" style="display: flex;">
+                            <div class="subhead-characters share"></div>
+                            <div class="range-price">
                                 <div class="self-price">
                                     5000
                                 </div>
@@ -146,6 +651,7 @@
                             <div class="sidebar__outwrapper">
                                 <div class="sidebar__wrapper sidebar__wrapper--estabilish">
                                     <div class="subhead">правила дома</div>
+                                    <div class="subhead-characters share"></div>
                                 </div>
                                 <div class="sidebar__elembox">
                                     <label class="cm-checkbox">
@@ -172,6 +678,7 @@
                             <div class="sidebar__outwrapper">
                                 <div class="sidebar__wrapper sidebar__wrapper--available">
                                     <div class="subhead">доступность</div>
+                                    <div class="subhead-characters share"></div>
                                 </div>
                                 <div class="sidebar__extendbox">
                                     <label class="extendcheck">
@@ -205,6 +712,7 @@
                         </div>
                         <div class="sidebar__wrapper sidebar__wrapper--comfort">
                             <div class="subhead">удобства номера</div>
+                            <div class="subhead-characters share"></div>
                         </div>
                         <div class="sidebar__dropdownbox sidebar__dropdownbox--short">
                             <!-- Компонент для выбора удобства номера -->
@@ -214,9 +722,11 @@
                         </div>
                     </div>
                     <div class="grid">
-                        <div class="content__wrapper">
+                        <div class="grid__content-wrapper">
                             <h4 class="subtitle">
                                 Номера, которые мы для вас подобрали
+                            </h4>
+                            <h4 class="subtitle-copy share">
                             </h4>
                         </div>
                         <div class="field">
@@ -344,7 +854,7 @@
                                     </div>
                                 </div>
                                 <div class="field__wrapper">
-                                    <div class="card cm-card">
+                                    <div class="card cm-card cm-card--last">
                                         <div class="card-slider">
                                             <div class="card-slider__item">
                                                 <img src="Toxin-hotel.github.io/slider/assets/assets/images__23/room444.png" class="card-slider__img" alt="room444">
@@ -530,7 +1040,7 @@
                                     </div>
                                 </div>
                                 <div class="field__wrapper">
-                                    <div class="card cm-card">
+                                    <div class="card cm-card cm-card--last">
                                         <div class="card-slider">
                                             <div class="card-slider__item">
                                                 <img src="Toxin-hotel.github.io/slider/assets/assets/images__24/image__441.jpg" class="card-slider__img" alt="room441">
@@ -719,7 +1229,7 @@
                                 <!-- -->
                                 <!-- Обертка для карточки -->
                                 <div class="field__wrapper">
-                                    <div class="card cm-card">
+                                    <div class="card cm-card cm-card--last">
                                         <div class="card-slider">
                                             <div class="card-slider__item">
                                                 <img src="Toxin-hotel.github.io/slider/assets/assets/images__31/image311.jpg" class="card-slider__img" alt="room311">
@@ -779,7 +1289,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- -->
                             </div>
                         </div>
                     </div>
@@ -800,7 +1309,7 @@
                             </div>
                         </div>
                         <div class="rectangle__description">
-                            <div class="label">
+                            <div class="label label--text">
                                 Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отдельные взгляды"
                             </div>
                         </div>
@@ -879,34 +1388,195 @@
                 <div class="rectangle__copybox">
                     <div class="copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
                 </div>
-                <div class="icon__wrapper">
-                    <div class="icon__box">
-                        <div class="social-icon social-icon--tw"></div>
-                    </div>
-                    <div class="icon__box">
-                        <div class="social-icon social-icon--fb"></div>
-                    </div>
-                    <div class="icon__box">
-                        <div class="social-icon social-icon--vk"></div>
-                    </div>
-                </div>
+                <ul class="social-icons">
+                    <li class="social-icons__item">
+                        <a href="www.google.com" class="social-icons__link">
+                            <span class="social-icon social-icon--tw"></span>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="www.google.com" class="social-icons__link">
+                            <span class="social-icon social-icon--fb"></span>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="www.google.com" class="social-icons__link">
+                            <span class="social-icon social-icon--vk"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </footer>
-        <!-- Подключение скриптов компонента "Селект" -->
-        <script src="Toxin-hotel.github.io/select.js"></script>
-        <!-- Подключение Jquery -->
+        <div class="modal-background hidden"></div>
+        <div class="modal-window hidden" id="btn--sign-in">
+            <div class="modal-body">
+                <img src="Toxin-hotel.github.io/assets/image 4.png" class="fullwidth-screen">
+                <div class="modal-body__form-self">
+                    <form class="form form--long">
+                        <div class="form__content">
+                            <div class="form__wrapper-title">
+                                <span class="title">Регистрация аккаунта</span>
+                            </div>
+                            <div class="form__wrapper-first-name">
+                                <input type="text" class="input-data" placeholder="Имя">
+                            </div>
+                            <div class="form__wrapper-last-name">
+                                <input type="text" class="input-data" placeholder="Фамилия">
+                            </div>
+                            <div class="form__select-gender">
+                                <div class="form__cntr">
+                                    <div class="form__wrapper-radio">
+                                        <label class="radio">
+                                            <input type="radio" name="radio" class="radio-hidden" checked>
+                                            <span class="label"></span>
+                                        </label>
+                                        <div class="form__container-label">
+                                            <span class="text-description text-description--blocked">Мужчина</span>
+                                        </div>
+                                    </div>
+                                    <div class="form__wrapper-radio">
+                                        <label class="radio">
+                                            <input type="radio" name="radio" class="radio-hidden">
+                                            <span class="label"></span>
+                                        </label>
+                                        <div class="form__container-label">
+                                            <span class="text-description text-description--blocked">Женщина</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__wrapper-label">
+                                <div class="label-field">Дата рождения</div>
+                            </div>
+                            <div class="form__getting-date">
+                                <input type="date" class="input-data" placeholder="ДД.ММ.ГГГГ">
+                            </div>
+                            <div class="label-field">Данные для входа в сервис</div>
+                            <div class="form__wrapper-email">
+                                <input type="email" class="input-data" placeholder="Email">
+                            </div>
+                            <div class="form__wrapper-password">
+                                <input type="text" class="input-data" placeholder="Пароль">
+                            </div>
+                            <div class="form__wrapper-switch">
+                                <div class="switch">
+                                    <input type="checkbox" class="switch__invisibility">
+                                    <span class="switch__slider switch__slider--round"></span>
+                                </div>
+                                <div class="form__wrapper-descript">
+                                    <div class="text-description">Получать спецпредложения</div>
+                                </div>
+                            </div>
+                            <div class="my-button">
+                                <div class="my-button-text">Перейти к оплате</div>
+                            </div>
+                            <div class="form__wrapp-has-acc">
+                                <div class="account-yet-text">Уже есть аккаунт на Toxin</div>
+                                <button type="submit" class="action btn btn--sign-in">Войти</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-window hidden" id="btn--sign-up">
+            <div class="modal-body">
+                <img src="Toxin-hotel.github.io/assets/image 4.png" class="fullwidth-screen ">
+                <div class="modal-body__form-self">
+                    <form action="#" class="form form--short">
+                        <div class="form__content">
+                            <div class="form__wrapper-title">
+                                <span class="title">Войти</span>
+                            </div>
+                            <div class="form__wrapper-email">
+                                <input
+                                    type="email"
+                                    class="input-data"
+                                    placeholder="Email"
+                                    name="email" size="20"
+                                    pattern=".+@google.com"
+                                    required
+                                >
+                            </div>
+                            <div class="form__wrapper-pass">
+                                <input
+                                    type="password"
+                                    class="input-data"
+                                    placeholder="Пароль"
+                                    name="password"
+                                    minlength="8"
+                                    required
+                                >
+                            </div>
+                            <div class="form__wrapp-btn">
+                                <button class="btn btn--sign-up btn--action">Войти</button>
+                                <div class="form__wrapp-btn-icon">
+                                    <div class="my-button-icon"></div>
+                                </div>
+                            </div>
+                            <div class="form__wrapp-create-acc">
+                                <div class="account-yet-text">Нет аккаунта на Toxin?</div>
+                                <button type="submit" class="btn btn--sign-in account">Создать</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Include JQuery from CDN -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
             crossorigin="anonymous">
         </script>
-        <!-- Подключение скриптов плагина slick -->
-        <script src="Toxin-hotel.github.io/slick.min.js"></script>
-        <!-- Инициализация параметров слайдера -->
-        <script src="Toxin-hotel.github.io/carousel_init.js"></script>
-        <!-- Скрипт вызова меню -->
-        <script src="Toxin-hotel.github.io/menu-piece.js"></script>
-        <!-- Скрипт компонента range-slider -->
+        <!-- "Липкий Header" -->
+        <script src="Toxin-hotel.github.io/header.js"></script>
+        <!-- Анимация подзаголовка в Sidebar -->
+        <script src="Toxin-hotel.github.io/subhead.js"></script>
+        <!-- Анимация подзаголовка в Контентной области -->
+        <script src="Toxin-hotel.github.io/subtitle.js"></script>
+        <!-- Компонент Select / Dropdown -->
+        <script src="Toxin-hotel.github.io/select.js"></script>
+        <!-- Ползунок -->
         <script src="Toxin-hotel.github.io/range-slider_js.js"></script>
+        <!-- Slick Slider -->
+        <script src="Toxin-hotel.github.io/slick.min.js"></script>
+        <!-- Инициализация параметров Слайдера -->
+        <script src="Toxin-hotel.github.io/carousel_init.js"></script>
+        <!-- Вызов анимированных модальных окон -->
+        <script src="Toxin-hotel.github.io/dialog.js"></script>
+        <script>
+            const main_btn = document.querySelector('.btn-humburger');
+            main_btn.addEventListener('click', () => {
+                main_btn.classList.toggle('action-down');
+            });
+
+            const view = document.querySelector('.cm-menu');
+            main_btn.addEventListener('click', () => {
+                view.classList.toggle('view');
+            })
+
+
+            const items = Array.from(view.querySelectorAll('.cm-menu__item'));
+            for (const item of items) {
+                if (item.classList.contains('cm-menu__item--opened')) {
+                    item.addEventListener('click', () => {
+                        const submenu = item.querySelector('.cm-submenu');
+                        submenu.classList.toggle('show');
+                    });
+                }
+            }
+        </script>
+        <!--
+             1) Сделать подпункты меню, меню 3-го уровня
+                2) Сделать адаптивный шрифт, списать формулы
+                3)
+                3.2) Написать или использовать либу для поля ввода с календарем
+                4) Написать работающую пагинацию
+                5) Заменить реализацию карточек с флексбокс на грид - ?
+                8) Анимацию изображений
+                9) Для текстовых полей написать readMoreReadLess
+
+        -->
     </body>
 </html>
