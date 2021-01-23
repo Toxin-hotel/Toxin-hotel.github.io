@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header__container-logo,
 .header__complicated-menu,
 .header__wrapper,
@@ -70,7 +71,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 104px 130px 100px 140px;
+  padding: 104px 140px 100px 140px;
 }
 
 .rectangle--tight {
@@ -84,7 +85,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 26px 130px 26px 0;
+  padding: 26px 140px 26px 0;
 }
 
 .rectangle__logo {
@@ -190,20 +191,24 @@
   }
 }
 
-@media screen and (min-width: 1150px) and (max-width: 1300px) {
+@media screen and (min-width: 1150px) and (max-width: 1399px) {
   .rectangle__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 104px 0 104px 140px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 104px 24px 100px 24px;
   }
   .rectangle--tight {
     padding-right: 24px;
+  }
+  .rectangle--copybox {
+    padding-left: 24px;
   }
 }
 
@@ -220,20 +225,8 @@
   }
 }
 
-@media screen and (min-width: 951px) and (max-width: 1300px) {
-  div.field__line {
-    padding-right: 24px;
-  }
-}
-
 .forward-list__wrapper {
   padding-bottom: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  /*В этом месте надо для особо класса указать стиль
-        Убрать отступ в списке
-    */
 }
 
 .space, .cm-card-body__relation, .cm-card-body__contain, .field__line {
@@ -307,17 +300,22 @@
   }
 }
 
-.content__wrapper {
-  text-align: center;
+.grid__content-wrapper {
+  text-align: left;
   margin-right: 250px;
   padding-bottom: 21px;
 }
 
-@media screen and (max-width: 950px) {
-  .content__wrapper {
-    text-align: center;
+@media screen and (max-width: 767px) {
+  .grid__content-wrapper {
     margin: 0;
-    padding: 21px 28px 21px 28px;
+    padding: 21px 28px;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1300px) {
+  .grid__content-wrapper {
+    margin-right: 0;
   }
 }
 
@@ -462,3 +460,144 @@
 .icon__box:last-child {
   padding-right: 0;
 }
+
+.modal-body__form-self {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__wrapper-first-name {
+  padding-top: 20px;
+}
+
+.form__wrapper-last-name {
+  padding-top: 10px;
+}
+
+.form__select-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10.44px;
+  padding-bottom: 23.56px;
+}
+
+.form__wrapp-radio:first-child {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.form__wrapp-radio:last-child {
+  width: 70%;
+}
+
+.form__wrapper-label {
+  padding-bottom: 5px;
+}
+
+.form__wrapper-title, .form__wrapper-pass, .form__wrapper-password, .form__getting-date {
+  padding-bottom: 20px;
+}
+
+.form__wrapper-email {
+  padding-bottom: 10px;
+}
+
+.form__wrapp-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__wrapp-btn-icon {
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
+}
+
+.form__wrapper-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.form__wrapper-descript {
+  padding-left: 10px;
+}
+
+.form__wrapp-has-acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.form__wrapp-create-acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.my-radio__wrapper-text {
+  margin-left: calc(18px + 10px);
+}
+
+/*Анимация модальных окон*/
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.rise-modal {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+  transition: -webkit-transform 0.5s ease-in-out !important;
+  transition: transform 0.5s ease-in-out !important;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out !important;
+}
+
+.rise-dialog {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+  transition: -webkit-transform 0.5s ease-in-out !important;
+  transition: transform 0.5s ease-in-out !important;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out !important;
+}
+
+.share {
+  cursor: pointer;
+}
+/*# sourceMappingURL=common.css.map */
