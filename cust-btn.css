@@ -1,0 +1,99 @@
+.my-button {
+  width: 320px;
+  height: 44px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 100%;
+  background: rgba(244, 254, 255, 0.25);
+  -webkit-transform: translateX(-100px) skewX(-45deg);
+          transform: translateX(-100px) skewX(-45deg);
+}
+
+.my-button:hover::before {
+  -webkit-animation: move-light 1s ease-in-out;
+          animation: move-light 1s ease-in-out;
+}
+
+.my-button-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.my-button-text::after {
+  content: "\f061";
+  font-family: 'Font Awesome 5 Pro';
+  color: #fff;
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+@-webkit-keyframes move-light {
+  0% {
+    -webkit-transform: translateX(-150px) skexX(-45deg);
+            transform: translateX(-150px) skexX(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(350px) skewX(-45deg);
+            transform: translateX(350px) skewX(-45deg);
+  }
+}
+
+@keyframes move-light {
+  0% {
+    -webkit-transform: translateX(-150px) skexX(-45deg);
+            transform: translateX(-150px) skexX(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(350px) skewX(-45deg);
+            transform: translateX(350px) skewX(-45deg);
+  }
+}
+/*# sourceMappingURL=cust-btn.css.map */
