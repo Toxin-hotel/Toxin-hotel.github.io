@@ -1,0 +1,42 @@
+.my-radio {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #bc9cff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.my-radio__real {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.my-radio__visibility {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3px 0 0 3px;
+}
+
+.my-radio__visibility::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  border-radius: 10px;
+}
+/*# sourceMappingURL=radio.css.map */
