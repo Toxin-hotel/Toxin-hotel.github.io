@@ -2,8 +2,15 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1150px) and (max-width: 1399px) {
   .grid {
-    padding-right: 130px;
+    padding-right: 24px;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .grid {
+    padding-right: 140px;
+  }
+}
+/*# sourceMappingURL=grid.css.map */
