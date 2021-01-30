@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.flip-action {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@media screen and (min-width: 1400px) {
+  .flip-action {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1140px) and (max-width: 1399px) {
+  .flip-action {
+    width: 255px;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1139px) {
+  .flip-action {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 949px) {
+  .flip-action {
+    width: 233px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flip-action {
+    width: 270px;
+  }
+}
+
+.flip-action__box {
+  position: relative;
+  /*Обязательно должна быть задана высота блока*/
+  height: 257px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.flip-action__box:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-action__box__text {
+  cursor: pointer;
+}
+
+.flip-box__footer {
+  position: absolute;
+  /*Особым способом задаем высоту*/
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  padding: 12px 12px 0 12px;
+}
+
+.flip-box__view-reviews {
+  margin-top: 12px;
+  width: 100%;
+}
+/*# sourceMappingURL=flip-element.css.map */
