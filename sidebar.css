@@ -1,29 +1,27 @@
 .sidebar {
-  width: auto;
-  padding-left: 140px;
-  padding-right: 59px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0 59px 0 140px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 1140px) and (max-width: 1399px) {
   .sidebar {
-    width: 100%;
-    padding: 0 24px;
+    width: 50%;
+    padding: 0 59px 0 140px;
   }
 }
 
-@media screen and (min-width: 951px) and (max-width: 1149px) {
+@media screen and (min-width: 960px) and (max-width: 1139px) {
   .sidebar {
-    width: 100%;
-    max-width: calc(30% + 30px);
-    padding: 0 59px 0 24px;
-  }
-}
-
-@media screen and (min-width: 1150px) and (max-width: 1399px) {
-  .sidebar {
+    width: 50%;
     padding: 0 calc(59px / 2) 0 24px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .sidebar {
+    padding: 0 24px;
   }
 }
 /*# sourceMappingURL=sidebar.css.map */
