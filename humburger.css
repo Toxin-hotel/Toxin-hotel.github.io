@@ -1,0 +1,110 @@
+.btn-humburger {
+  position: relative;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: #fff;
+  line-height: 0.6;
+  border: 2px solid #8ba4f9;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-humburger:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.24);
+          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.24);
+}
+
+.btn-humburger:hover::after {
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+}
+
+.btn-humburger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.btn-humburger__element {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+}
+
+.btn-humburger__element::before, .btn-humburger__element::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 18px;
+  height: 2px;
+}
+
+.btn-humburger__element::before, .btn-humburger__element::after, .btn-humburger__element:hover::before, .btn-humburger__element:hover::after, .btn-humburger__element:focus::before, .btn-humburger__element:focus::after {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+}
+
+.btn-humburger__element::before {
+  margin: -7px 3px;
+}
+
+.btn-humburger__element::after {
+  margin: 7px 3px;
+}
+
+.btn-humburger__element:focus {
+  outline: none;
+}
+
+.action-down > .btn-humburger__element {
+  background: transparent;
+}
+
+.action-down > .btn-humburger__element::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.action-down > .btn-humburger__element::after {
+  -webkit-transform: rotate(313deg);
+          transform: rotate(313deg);
+}
+
+.action-down > .btn-humburger__element::before, .action-down > .btn-humburger__element::after {
+  margin: 0 3px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.slowdown {
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/*# sourceMappingURL=humburger.css.map */
