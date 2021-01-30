@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.hover-link-action {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-link-action:hover {
+  text-decoration: none;
+}
+
+.hover-link-action > .hover-link-action__text-link {
+  display: block;
+  position: relative;
+  color: #fff;
+  /*Толщина линии*/
+  margin: 2px;
+  padding: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+}
+
+.hover-link-action::before, .hover-link-action::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.hover-link-action::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.hover-link-action::after {
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.hover-link-action:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=background-link.css.map */
