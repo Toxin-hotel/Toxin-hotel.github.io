@@ -1,8 +1,9 @@
-const menu_items = document.querySelectorAll('.cm-menu__item');
+const menu_items = document.querySelectorAll('.cm-dropdown-menu__item');
 const enter = document.querySelector('.header__entrance');
 const overlay = document.querySelector('.modal-background');
 
 const dialogOpen = function(event) {
+    console.log(event.target);
     if (event.target.nodeName == 'BUTTON') {
         if (event.target.classList.contains('btn--sign-in')) {
             const current_classes = event.target.className.split(' ');
