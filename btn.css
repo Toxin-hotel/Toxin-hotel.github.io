@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*Большой вопрос, почему отвалились кнопки???*/
+.state-shadow, .btn:active, .btn:focus {
+  -webkit-box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+          box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -17,35 +24,6 @@
   transition: all 0.75s ease;
 }
 
-.btn--sign-in,
-.btn--sign-in:link,
-.btn--sign-in:visited {
-  width: 87px;
-  height: 34px;
-  background: #fff;
-  color: #bc9cff;
-  border: 2px solid #bc9cff;
-}
-
-.btn--sign-in:hover {
-  color: #bc9cff;
-}
-
-.btn--sign-up,
-.btn--sign-up:link,
-.btn--sign-up:visited {
-  width: 196px;
-  height: 34px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
-  border: none;
-  color: #fff;
-}
-
-.btn--sign-up:hover {
-  color: #fff;
-}
-
 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -53,17 +31,20 @@
           box-shadow: 0 10px 20px rgba(31, 32, 65, 0.2);
 }
 
+.btn:hover::after {
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+}
+
 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
-          box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
 }
 
 .btn:focus {
   outline: none;
-  -webkit-box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
-          box-shadow: 0 5px 10px rgba(31, 32, 65, 0.2);
 }
 
 .btn::after {
@@ -80,16 +61,57 @@
   transition: all 1s ease;
 }
 
-.btn:hover::after {
-  background: #fff;
-  opacity: 0;
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
+.btn--action {
+  width: 100% !important;
+  height: 44px !important;
 }
 
-.btn--action {
-  width: 100%;
+.btn--sign-in, .btn--sign-in:link, .btn--sign-in:visited {
+  width: 87px;
+  height: 34px;
+  background: #fff;
+  border: 2px solid #bc9cff;
+}
+
+.btn--sign-in, .btn--sign-in:link, .btn--sign-in:visited, .btn--sign-in:hover {
+  color: #bc9cff;
+}
+
+.btn--sign-up, .btn--sign-up:link, .btn--sign-up:visited {
+  width: 196px;
+  height: 34px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  border: none;
+}
+
+.btn--sign-up, .btn--sign-up:link, .btn--sign-up:visited, .btn--sign-up:hover {
+  color: #fff;
+}
+
+.btn--transform {
+  width: 99px;
   height: 44px;
+  background: #fff;
+  border: 2px solid #bc9cff;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1149px) {
+  .btn--sign-in:not(.is-dialog),
+  .btn--sign-up:not(.is-dialog) {
+    width: 100%;
+    height: 60%;
+  }
+  .btn--sign-in:not(.is-dialog),
+  .btn--sign-up:not(.is-dialog) {
+    font-size: 16px;
+  }
+  .btn--sign-in.is-dialog,
+  .btn--sign-up.is-dialog {
+    font-size: 14px;
+  }
 }
 
 @-webkit-keyframes waves {
