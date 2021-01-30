@@ -1,2 +1,2 @@
 # Toxin-hotel.github.io
-Almost ready site of hotel toxin
+Site Layout of Toxin Hotel
