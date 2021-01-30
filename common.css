@@ -1,4 +1,67 @@
 @charset "UTF-8";
+@media screen and (max-width: 1139px) {
+  .header__content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .header__content {
+    padding-right: 20px;
+  }
+}
+
+.header__wrapper-humburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+}
+
+.header__menu {
+  position: absolute;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 99999;
+}
+
+.header__content--mobile {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 0 24px 8px 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 949px) {
+  .header__content--mobile {
+    padding: 0 24px 8px 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .header__menu {
+    position: static;
+    width: 100%;
+  }
+  .header__content--mobile {
+    display: none;
+  }
+}
+
 .header__container-logo,
 .header__complicated-menu,
 .header__wrapper,
@@ -37,31 +100,14 @@
   margin-right: 20px;
 }
 
-@media screen and (min-width: 1150px) {
-  .header__complicated-menu {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (max-width: 1149px) {
-  .header__visible {
-    display: block;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .content__sidebar {
+    width: 100% !important;
   }
 }
 
 .rectangle__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +120,7 @@
   padding: 104px 140px 100px 140px;
 }
 
-.rectangle--tight {
+.rectangle--in-around {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +160,12 @@
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .rectangle__container {
+    padding: 104px 24px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .rectangle__container {
     display: block;
@@ -123,7 +175,7 @@
   .rectangle__container > div:last-child {
     margin-bottom: 0;
   }
-  .rectangle--tight {
+  .rectangle--in-around {
     padding-right: 24px;
   }
   .rectangle__logo, .rectangle__description {
@@ -152,10 +204,6 @@
     min-width: min-content;
     padding: 104px 0 104px 24px;
   }
-  .rectangle--tight {
-    padding-right: 34px;
-    min-width: 798px;
-  }
   .rectangle__mix {
     margin-right: 5px;
   }
@@ -181,9 +229,8 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 104px 0;
-    min-width: 1024px;
   }
-  .rectangle--tight {
+  .rectangle--in-around {
     padding-right: 24px;
   }
   .rectangle__copybox {
@@ -204,24 +251,11 @@
             align-items: center;
     padding: 104px 24px 100px 24px;
   }
-  .rectangle--tight {
+  .rectangle--in-around {
     padding-right: 24px;
   }
   .rectangle--copybox {
     padding-left: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 950px) {
-  div.content__sidebar {
-    width: 100%;
-  }
-  div.grid {
-    width: 100%;
-    margin: 0 auto;
-  }
-  div.field__line {
-    padding-right: 0;
   }
 }
 
@@ -335,6 +369,19 @@
   padding-right: 5px;
 }
 
+/*Перенести в отдельный компонент*/
+/*Начало блока стилей компонент "Поля"*/
+/*
+    Переименовать названия классов
+    grid-complex -> grid
+    grid -> grid__content
+    grid__content-wrapper -> grid__title
+    field -> grid__items
+    field__line -> grid__item
+    field__wrapper -> grid__box-item
+
+    После переименования перенести стили сетки в отдельный файл
+*/
 .field__line {
   width: 100%;
   -webkit-box-orient: horizontal;
@@ -349,8 +396,21 @@
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 960px) {
+  .field__line > .field__wrapper {
+    margin-right: 12px;
+  }
+  .field__line > .field__wrapper:last-child {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .field {
+    margin-bottom: 12px;
+  }
   .field__line {
+    margin-bottom: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,17 +419,43 @@
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .field__line:last-child {
-    margin-bottom: 18px;
+  .field__line > .field__wrapper {
+    margin-bottom: 12px;
   }
-  .field__wrapper {
-    padding-bottom: 18px;
-  }
-  .field__wrapper:last-child {
-    padding-bottom: 0;
+  .field__line > .field__wrapper:last-child {
+    margin: 0;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .field__line {
+    margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1140px) {
+  .field__wrapper {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .field__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*Конец блока стилей компонента "Поле"*/
 .card-slider__img {
   width: 100%;
   height: 155px !important;
