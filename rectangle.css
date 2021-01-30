@@ -1,9 +1,30 @@
 .rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fff;
   width: 100%;
   border-top: 1px solid rgba(31, 32, 65, 0.1);
+  border-left: none;
+  border-right: none;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   -webkit-box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
           box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
+}
+
+.rectangle-in-around {
+  padding: 26px 140px 26px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .rectangle--in-around {
+    padding: 26px 24px 26px 24px;
+  }
 }
 /*# sourceMappingURL=rectangle.css.map */
