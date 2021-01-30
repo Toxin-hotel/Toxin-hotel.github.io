@@ -10,6 +10,7 @@
           align-items: center;
   padding: 15px 140px;
   width: 100%;
+  max-width: 1599px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -71,6 +72,15 @@
 }
 
 @media screen and (min-width: 1140px) and (max-width: 1399px) {
+  .header {
+    padding: 15px 24px 15px 140px;
+  }
+  .sticky {
+    padding: 15px 24px 15px 140px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1139px) {
   .header {
     padding: 15px 24px;
   }
