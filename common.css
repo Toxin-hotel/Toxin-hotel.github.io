@@ -100,26 +100,6 @@
   margin-right: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 950px) {
-  .content__sidebar {
-    width: 100% !important;
-  }
-}
-
-.rectangle__container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 104px 140px 100px 140px;
-}
-
 .rectangle--in-around {
   border: none;
   display: -webkit-box;
@@ -160,9 +140,37 @@
           box-sizing: border-box;
 }
 
+.rectangle__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 104px 140px 100px 140px;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1149px) {
+  .rectangle__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 104px 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .rectangle__container {
-    padding: 104px 24px;
+    padding: 104px 0 100px 24px;
   }
 }
 
@@ -173,8 +181,11 @@
     text-align: center;
   }
   .rectangle__container > div:last-child {
-    margin-bottom: 0;
+    margin: 0;
   }
+}
+
+@media screen and (max-width: 767px) {
   .rectangle--in-around {
     padding-right: 24px;
   }
@@ -198,12 +209,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 950px) {
-  .rectangle__container {
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content;
-    padding: 104px 0 104px 24px;
-  }
   .rectangle__mix {
     margin-right: 5px;
   }
@@ -219,17 +224,6 @@
 }
 
 @media screen and (min-width: 951px) and (max-width: 1149px) {
-  .rectangle__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 104px 0;
-  }
   .rectangle--in-around {
     padding-right: 24px;
   }
@@ -335,21 +329,14 @@
 }
 
 .grid__content-wrapper {
-  text-align: left;
   margin-right: 250px;
   padding-bottom: 21px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1300px) {
   .grid__content-wrapper {
     margin: 0;
-    padding: 21px 28px;
-  }
-}
-
-@media screen and (min-width: 951px) and (max-width: 1300px) {
-  .grid__content-wrapper {
-    margin-right: 0;
+    padding: 21px 0;
   }
 }
 
