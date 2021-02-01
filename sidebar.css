@@ -8,7 +8,7 @@
 @media screen and (min-width: 1140px) and (max-width: 1399px) {
   .sidebar {
     width: 50%;
-    padding: 0 59px 0 140px;
+    padding: 0 calc(59px / 2) 0 24px;
   }
 }
 
