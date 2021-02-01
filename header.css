@@ -73,10 +73,10 @@
 
 @media screen and (min-width: 1140px) and (max-width: 1399px) {
   .header {
-    padding: 15px 24px 15px 140px;
+    padding: 15px calc(59px / 2) 15px 24px;
   }
   .sticky {
-    padding: 15px 24px 15px 140px;
+    padding: 15px calc(59px / 2) 15px 24px;
   }
 }
 
