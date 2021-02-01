@@ -1,21 +1,74 @@
-.input-data {
+.label-input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+}
+
+.label-input__data {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   background: #fff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
   width: 100%;
-  height: 44px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  padding: 13px 0 13px 15px;
   cursor: pointer;
 }
 
-.input-data:focus {
+.label-input__data--only-mail {
+  width: 245px;
+  padding: 12px 0 12px 15px;
+}
+
+.label-input__data:focus {
   outline: none;
+}
+
+.label-input__data:focus + .label-input__label {
+  position: absolute;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  font-size: 12px;
+  padding: 13px 0 0 15px;
+  color: rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+}
+
+.label-input__data + .label-input__label {
+  color: rgba(31, 32, 65, 0.25);
+  line-height: 18px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 13px 0 13px 15px;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .label-input__data {
+    width: 215px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .label-input__data {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .label-input__data {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=input-data.css.map */
