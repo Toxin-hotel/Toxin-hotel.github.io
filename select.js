@@ -10,7 +10,7 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
         if (switcher == 'select') {
             return `
                 <li class="select__item ${cls}" data-type="item" data-value="${item.id}">${item.value}</li>
-            `  
+            `
         } else if (switcher == 'dropdown') {
             return `
                 <div class="select__item select__item--in ${cls}" data-type="item" data-value="${item.id}">
@@ -31,13 +31,12 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
                 </label>
             `
         }
-        
     });
 
     if (switcher == 'select') {
         return `
             <div class="select__input" data-type="input">
-                <div class="select__text" data-type="text">${text}</div>
+                <span class="select__text" data-type="text">${text}</span>
                 <span class="select__icon" data-type="icon"></span>
             </div>
             <div class="select__dropdown">
@@ -49,19 +48,19 @@ const renderTemplate = (data = [], textdefault, option, switcher = 'select') => 
     } else if (switcher == 'dropdown') {
         return `
             <div class="select__input" data-type="input">
-                <div class="select__text" data-type="text">${text}</div>
+                <span class="select__text" data-type="text">${text}</span>
                 <span class="select__icon" data-type="icon"></span>
             </div>
             <div class="select__dropdown">
                 <div class="select__list">
                     ${items.join('')}
-                </div>  
+                </div>
             </div>
         `
     } else if (switcher == 'mark') {
         return `
             <div class="select__input" data-type="input">
-                <div class="select__text select__text--upper" data-type="text">${text}</div>
+                <span class="select__text select__text--upper" data-type="text">${text}</span>
                 <span class="select__icon"></span>
             </div>
             <div class="select__dropdown">
@@ -126,7 +125,7 @@ class Select {
 
     clickHandler(event) {
         const {type} = event.target.dataset;
-        
+
         if (type === 'input') {
             this.#toggle();
         } else if (type === 'item') {
@@ -225,7 +224,7 @@ selectedCountGuests
     .close();
 
 const selectedComfortRoom = new Select('.sidebar__dropdownbox--short', {
-    placeholder: '2 спальни, 2 кровати...',
+    placeholder: '2 спальни, 2 кровати, 1 ванная комната',
     data: [
         {id: 1, value: 'спальни', count: 2},
         {id: 2, value: 'кровати', count: 2},
