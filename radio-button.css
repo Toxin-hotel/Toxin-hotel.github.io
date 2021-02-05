@@ -1,0 +1,73 @@
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio-checker {
+  display: block;
+  cursor: pointer;
+}
+
+.radio-checker__hidden {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+}
+
+.radio-checker__hidden:checked + .radio-checker__imitation {
+  border-color: rgba(31, 32, 65, 0.25);
+}
+
+.radio-checker__hidden:hover + .radio-checker__imitation::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  margin-left: 3px;
+  -webkit-transform: scale(3.6);
+          transform: scale(3.6);
+}
+
+.radio-checker__hidden:checked + .radio-checker__imitation::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.radio-checker__imitation {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #bc9cff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.radio-checker__imitation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  opacity: 0.1;
+  border-radius: 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+/*# sourceMappingURL=radio-button.css.map */
