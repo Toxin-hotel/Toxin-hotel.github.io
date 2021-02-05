@@ -25,4 +25,25 @@
   width: 380px;
   padding-bottom: 32px;
 }
+
+@media screen and (min-width: 415px) and (max-width: 719px) {
+  .form--short {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .form--long {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .form--short {
+    width: 100%;
+  }
+  .form--long {
+    width: 350px;
+  }
+}
 /*# sourceMappingURL=form.css.map */
