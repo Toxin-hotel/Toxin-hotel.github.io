@@ -63,6 +63,7 @@
 }
 
 .extendcheck__textlarge {
+  width: 200px;
   display: block;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -74,9 +75,13 @@
   line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .extendcheck__textsmall {
+  width: 230px;
   display: block;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -87,6 +92,9 @@
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
+  white-space: break-spaces;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @-webkit-keyframes jellybox {
