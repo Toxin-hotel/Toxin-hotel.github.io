@@ -1,50 +1,104 @@
-@charset "UTF-8";
 .switch {
   position: relative;
   width: 40px;
   height: 20px;
+  cursor: pointer;
 }
 
 .switch__invisibility {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
-.switch__slider {
+.switch__invisibility:checked {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+  margin-top: 4px;
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+.switch__invisibility:checked + .switch__body::before {
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  -webkit-transition: background 0.75s ease-in-out;
+  transition: background 0.75s ease-in-out;
+}
+
+.switch__invisibility:checked + .switch__body .switch__pointer {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+          box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.switch__invisibility:checked + .switch__body .switch__pointer::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.switch__body {
+  position: relative;
+}
+
+.switch__body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.switch__body .switch__pointer {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  background: #fff;
-  -webkit-transition: .4s;
-  transition: .4s;
-  /*Подумать, какая сюда подойдет функция*/
-}
-
-.switch__slider::before {
-  position: absolute;
-  content: "";
   width: 12px;
   height: 12px;
-  left: 0;
-  bottom: 0;
-  margin: 0 0 4px 4px;
   background: rgba(31, 32, 65, 0.25);
-  -webkit-transition: .4s;
-  transition: .4s;
+  border-radius: 10px;
+  margin: 4px 0 4px 4px;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
-.switch__slider--round {
-  border-radius: 10px;
-}
-
-.switch__slider--round::before {
-  border-radius: 10px;
+.wave-action::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 1;
+  margin: -12px 0 0 -8px;
 }
 /*# sourceMappingURL=switch.css.map */
