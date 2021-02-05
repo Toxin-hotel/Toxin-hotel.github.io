@@ -1,0 +1,99 @@
+/*tooltip setup*/
+.cm-tooltip {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.cm-tooltip--appear {
+  opacity: 1;
+}
+
+.cm-tooltip__item::before, .cm-tooltip__item::after {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cm-tooltip__item::before {
+  content: attr(data-title);
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+
+.cm-tooltip__item::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.cm-tooltip--bottom .cm-tooltip__item::before {
+  margin-top: 25px;
+}
+
+.cm-tooltip--bottom .cm-tooltip__item::after {
+  margin-top: 19px;
+  margin-left: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #8ba4f9;
+}
+
+.cm-tooltip--right .cm-tooltip__item::before {
+  margin-left: 120px;
+}
+
+.cm-tooltip--right .cm-tooltip__item::after {
+  margin-top: 15px;
+  margin-left: 111px;
+  border-top: 6px solid #8ba4f9;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.cm-tooltip--right .cm-tooltip__item.expand:hover::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*the animations*/
+.expand::before {
+  -webkit-transform: scale(0.2, 0.2);
+          transform: scale(0.2, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.expand::after {
+  -webkit-transform: scale(0, 0.6);
+          transform: scale(0, 0.6);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.expand:hover::before, .expand:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.expand:hover::after {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/*# sourceMappingURL=tooltip.css.map */
