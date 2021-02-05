@@ -9,4 +9,8 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
+
+.text-description--blocked {
+  display: block;
+}
 /*# sourceMappingURL=text-description.css.map */
