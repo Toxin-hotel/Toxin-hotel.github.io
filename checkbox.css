@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cm-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +64,12 @@
 }
 
 .cm-checkbox__text {
+  /*
+            Обязательное свойство для
+            обрезки текстовых полей
+        */
+  display: block;
+  width: 192px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -72,10 +79,13 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cm-checkbox__text--uniq {
-  width: 192px;
+  white-space: break-spaces;
 }
 
 @-webkit-keyframes jellybox {
