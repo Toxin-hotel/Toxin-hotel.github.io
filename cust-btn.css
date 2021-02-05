@@ -75,6 +75,12 @@
   right: 0;
 }
 
+@media screen and (max-width: 414px) {
+  .my-button {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes move-light {
   0% {
     -webkit-transform: translateX(-150px) skexX(-45deg);
