@@ -1,23 +1,18 @@
 .text-logo {
+  display: block;
   color: #1f2041;
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  width: 48.61px;
-  height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 50px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
