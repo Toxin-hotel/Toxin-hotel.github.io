@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.card-back-side {
+  position: absolute;
+  /*Особым способом задаем высоту*/
+  top: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0, #8ba4f9 100%);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  padding: 12px 12px 0 12px;
+}
+
+.card-back-side__background-text {
+  cursor: pointer;
+}
+
+.card-back-side__view-reviews {
+  width: 100%;
+}
+/*# sourceMappingURL=back-side-card.css.map */
