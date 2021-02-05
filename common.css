@@ -673,4 +673,22 @@
 .share {
   cursor: pointer;
 }
+
+.form__radio-buttons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio__description-box {
+  padding: 0 20px 0 10px;
+}
+
+.radio:last-child .radio__description-box {
+  padding: 0 0 0 10px;
+}
+
+.card-back-side__view-reviews {
+  margin-top: 12px;
+}
 /*# sourceMappingURL=common.css.map */
